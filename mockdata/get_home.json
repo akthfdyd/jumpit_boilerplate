@@ -1,0 +1,8 @@
+{
+  "message": "데이터 호출에 성공하셨습니다.",
+  "status": 200,
+  "data": {
+    "title": "jumpit_boilerplate",
+    "contents": "This is a sample app\nBased on clean architecture."
+  }
+}

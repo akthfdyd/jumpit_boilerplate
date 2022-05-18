@@ -1,0 +1,8 @@
+{
+  "message": "로그인에 성공하셨습니다.",
+  "status": 200,
+  "data": {
+    "accessToken": "asdf",
+    "refreshToken": "qwer"
+  }
+}

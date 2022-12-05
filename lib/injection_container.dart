@@ -11,6 +11,8 @@ import 'package:jumpit_boilerplate/presentation/screen/tab/my/my_viewmodel.dart'
 
 final it = GetIt.instance;
 
+/// {@category Architecture}
+/// {@category ArchitectureKR}
 Future<void> init() async {
   // section: viewmodel
   it.registerFactory(() => BottomTabViewModel());

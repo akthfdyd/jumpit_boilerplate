@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// {@category DataSource}
 class MockDataStore {
   static final MockDataStore _instance = MockDataStore._internal();
   static late AssetBundle asset;

@@ -1,3 +1,4 @@
+/// {@category DataSource}
 class TemporaryData {
   static final TemporaryData _instance = TemporaryData._internal();
 

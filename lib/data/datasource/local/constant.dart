@@ -1,5 +1,6 @@
 import 'package:jumpit_boilerplate/util/dev_log.dart';
 
+/// {@category DataSource}
 class Const {
   static LogLevel logLevel = LogLevel.v;
   static bool useProxy = false;

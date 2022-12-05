@@ -8,6 +8,15 @@ import 'package:jumpit_boilerplate/presentation/screen/tab/home/home_view.dart';
 import 'package:jumpit_boilerplate/presentation/screen/tab/my/my_view.dart';
 import 'package:jumpit_boilerplate/util/dev_log.dart';
 
+/// {@category Screen}
+/// 하단탭을 가진 최상위 화면단위 [_BottomTabViewState]
+/// - Project: http://www.groupware.com/projectnumber
+/// - Design: http://www.designaddress.com/projectnumber
+/// - Specification: http://www.specandwireframe.com/projectnumber
+/// ***
+/// # Dev TC
+/// #### [o] 하단 홈/My버튼으로 화면이 변경되는가
+/// #### [o] 비로그인 상태에서 My버튼을 눌렀을 때 로그인 화면이 호출되는가
 class BottomTabView extends StatefulWidget {
   const BottomTabView({Key? key}) : super(key: key);
 

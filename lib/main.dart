@@ -4,6 +4,8 @@ import 'package:jumpit_boilerplate/data/datasource/local/mock_data_store.dart';
 import 'package:jumpit_boilerplate/presentation/screen/bottom_tab_view.dart';
 import 'injection_container.dart' as ic;
 
+/// {@category Architecture}
+/// {@category ArchitectureKR}
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await ic.init();

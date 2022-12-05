@@ -10,6 +10,19 @@ import 'package:jumpit_boilerplate/presentation/screen/login/login_viewmodel.dar
 import 'package:jumpit_boilerplate/util/dev_log.dart';
 import 'package:jumpit_boilerplate/util/screen_util.dart';
 
+/// {@category Screen}
+/// 로그인 화면 [_LoginScreenState]
+/// - Project: http://www.groupware.com/projectnumber
+/// - Design: http://www.designaddress.com/projectnumber
+/// - Specification: http://www.specandwireframe.com/projectnumber
+/// ***
+/// # Dev TC
+/// #### [o] ID 란에 이메일 주소 입력이 되는가
+/// #### [x] ID 입력조건(xxx@xxx.xxx 이메일 주소 형태)에 따라 Validation이 되는가
+/// #### [o] PW 란에 비밀번호 입력이 되는가
+/// #### [o] PW를 입력할 때 숨김처리가 되는가
+/// #### [o] PW 입력조건(8자 이상)에 맞지 않는 경우 에러메세지가 노출되는가
+/// #### [o] Sign in 버튼을 눌러 로그인 처리가 되고 이전 화면으로 돌아가는가
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 

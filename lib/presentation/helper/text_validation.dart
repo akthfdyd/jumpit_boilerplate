@@ -1,5 +1,6 @@
 import 'package:arc/arc.dart';
 
+/// {@category Helper}
 String passwordValidation(String str) {
   if (str.isNullOrEmpty) {
     return "";

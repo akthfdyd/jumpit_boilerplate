@@ -1,6 +1,7 @@
 import 'package:jumpit_boilerplate/data/datasource/remote/remote_datasource.dart';
 import 'package:jumpit_boilerplate/domain/entity/login_entity.dart';
 
+/// {@category Repository}
 abstract class LoginRepository {
   RemoteDataSource dataSource;
 

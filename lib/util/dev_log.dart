@@ -4,14 +4,9 @@ import 'package:arc/arc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:jumpit_boilerplate/data/datasource/local/constant.dart';
 
-enum LogLevel {
-  v, // explain: many logs
-  d, // explain: connection, data logs
-  i, // explain: class lifecycle, method call
-  w, // explain: except case but not error
-  e, // explain: runtime error / exception
-}
+enum LogLevel { v, d, i, w, e }
 
+/// {@category Util}
 class Log {
   static void log(String text, String prefix) {
     if (!kReleaseMode) {
@@ -29,6 +24,7 @@ class Log {
     }
   }
 
+  /// logs for development
   static void v(String? text) {
     switch (Const.logLevel) {
       case LogLevel.v:
@@ -42,6 +38,7 @@ class Log {
     }
   }
 
+  /// for debug. connection, data logs
   static void d(String text) {
     switch (Const.logLevel) {
       case LogLevel.v:
@@ -55,6 +52,7 @@ class Log {
     }
   }
 
+  /// class lifecycle, method call
   static void i(String text) {
     switch (Const.logLevel) {
       case LogLevel.v:
@@ -70,6 +68,7 @@ class Log {
     }
   }
 
+  /// except case but not error
   static void w(String text) {
     switch (Const.logLevel) {
       case LogLevel.v:
@@ -90,6 +89,7 @@ class Log {
     }
   }
 
+  /// runtime error / exception
   static void e(exception, StackTrace stack, {String? text}) {
     switch (Const.logLevel) {
       case LogLevel.v:

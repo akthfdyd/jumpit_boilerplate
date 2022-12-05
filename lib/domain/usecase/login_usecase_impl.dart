@@ -2,6 +2,7 @@ import 'package:jumpit_boilerplate/domain/entity/login_entity.dart';
 import 'package:jumpit_boilerplate/domain/repository/login_repository.dart';
 import 'package:jumpit_boilerplate/domain/usecase/usecase.dart';
 
+/// {@category UseCase}
 class LoginUseCaseImpl implements UseCase {
   LoginRepository loginRepository;
 

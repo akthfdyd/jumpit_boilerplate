@@ -3,6 +3,19 @@ import 'dart:async';
 import 'package:arc/arc_subject.dart';
 import 'package:flutter/material.dart';
 
+/// {@category Component}
+/// stateful 이므로 초기값 설정에 주의할 것.
+/// ```dart
+/// viewModel.isChecked.ui(
+///    builder: (context, autoLogin) => CustomSwitch(
+///     value: isChecked.data ?? false,
+///     onChanged: (value) {
+///       viewModel.onToggleSwitch();
+///     })),
+/// ```
+/// ```dart
+/// onToggleSwitch() => isChecked.val = !isChecked.val;
+/// ```
 class CustomSwitch extends StatefulWidget {
   bool value;
   ValueChanged<bool>? onChanged;

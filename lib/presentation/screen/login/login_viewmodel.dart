@@ -9,6 +9,7 @@ import 'package:jumpit_boilerplate/util/dev_log.dart';
 
 enum LoginViewState { START, LOGIN_COMPLETED, LOGIN_ERROR, LOGIN_FAILED }
 
+/// {@category ViewModel}
 class LoginViewModel implements ViewModelInterface {
   // section: view state
   final viewState = ArcSubject<LoginViewState>();

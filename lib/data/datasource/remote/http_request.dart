@@ -10,6 +10,7 @@ import 'package:jumpit_boilerplate/data/datasource/local/api_url.dart';
 import 'package:jumpit_boilerplate/data/datasource/local/constant.dart';
 import 'package:jumpit_boilerplate/util/dev_log.dart';
 
+/// {@category DataSource}
 class HttpRequest implements RemoteDataSource {
   @override
   Future<Response> request(

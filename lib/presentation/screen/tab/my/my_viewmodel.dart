@@ -3,6 +3,7 @@ import 'package:jumpit_boilerplate/presentation/viewmodel_interface.dart';
 
 enum MyViewState { START, FETCHED, ERROR }
 
+/// {@category ViewModel}
 class MyViewModel implements ViewModelInterface {
   final viewState = ArcSubject<MyViewState>();
 

@@ -1,3 +1,4 @@
+/// {@category Entity}
 class HomeEntity {
   HomeTitleEntity homeTitleEntity;
   HomeContentsEntity homeContentsEntity;

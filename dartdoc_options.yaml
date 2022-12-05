@@ -1,0 +1,79 @@
+dartdoc:
+
+  categories:
+    "Architecture":
+      markdown: lib/topics/architecture.md
+    "ArchitectureKR":
+      markdown: lib/topics/architecture_kr.md
+    "Screen":
+      markdown: lib/topics/screen.md
+    "ViewModel":
+      markdown: lib/topics/viewmodel.md
+    "Component":
+      markdown: lib/topics/component.md
+    "Helper":
+      markdown: lib/topics/helper.md
+    "Entity":
+      markdown: lib/topics/entity.md
+    "UseCase":
+      markdown: lib/topics/usecase.md
+    "Repository":
+      markdown: lib/topics/repository.md
+    "RepositoryImpl":
+      markdown: lib/topics/repositoryimpl.md
+    "DataSource":
+      markdown: lib/topics/datasource.md
+    "Model":
+      markdown: lib/topics/model.md
+    "Util":
+      markdown: lib/topics/util.md
+  categoryOrder:
+    - "Architecture"
+    - "ArchitectureKR"
+    - "Screen"
+    - "Component"
+    - "ViewModel"
+    - "Helper"
+    - "Entity"
+    - "UseCase"
+    - "Repository"
+    - "RepositoryImpl"
+    - "DataSource"
+    - "Model"
+    - "Util"
+
+#  subCategories:
+#    "Architecture":
+#      markdown: lib/topics/architecture.md
+#    "Presentation":
+#      - "Screen":
+#          markdown: lib/topics/screen.md
+#      - "ViewModel":
+#          markdown: lib/topics/viewmodel.md
+#      - "Component":
+#          markdown: lib/topics/component.md
+#      - "Helper":
+#          markdown: lib/topics/helper.md
+#    "Domain":
+#      - "Entity":
+#          markdown: lib/topics/entity.md
+#      - "UseCase":
+#          markdown: lib/topics/usecase.md
+#      - "Repository":
+#          markdown: lib/topics/repository.md
+#    "Data":
+#      - "RepositoryImpl":
+#          markdown: lib/topics/repositoryimpl.md
+#      - "DataSource":
+#          markdown: lib/topics/datasource.md
+#      - "Model":
+#          markdown: lib/topics/model.md
+#    "Util":
+#      markdown: lib/topics/util.md
+#  subCategoryOrder:
+#    - "Architecture"
+#    - "Presentation"
+#    - "Domain"
+#    - "Data"
+#    - "Util"
+

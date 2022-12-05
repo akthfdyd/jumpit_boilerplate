@@ -5,6 +5,7 @@ import 'package:jumpit_boilerplate/util/dev_log.dart';
 // explain: ViewState -> enum or implements of abstract class
 enum BottomTabViewState { HOME, MY }
 
+/// {@category ViewModel}
 class BottomTabViewModel implements ViewModelInterface {
   var tabState = ArcSubject<BottomTabViewState>();
 

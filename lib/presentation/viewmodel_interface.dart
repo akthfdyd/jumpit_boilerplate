@@ -1,3 +1,4 @@
+/// {@category ViewModel}
 class ViewModelInterface {
   disposeAll() {}
 

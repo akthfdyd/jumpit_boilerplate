@@ -1,5 +1,5 @@
-/// use this tool https://javiercbk.github.io/json_to_dart/
-// explain: Value Object for data transfer (Server API developer knows this data)
+/// {@category Model}
+/// Value Object for data transfer (Server API developer knows this data)
 class HomeGetVO {
   String? message;
   int? status;

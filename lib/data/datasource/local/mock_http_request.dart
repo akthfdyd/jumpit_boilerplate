@@ -6,6 +6,7 @@ import 'package:jumpit_boilerplate/data/datasource/local/api_url.dart';
 import 'package:jumpit_boilerplate/data/datasource/local/mock_data_store.dart';
 import 'package:jumpit_boilerplate/util/dev_log.dart';
 
+/// {@category DataSource}
 class MockHttpRequest implements RemoteDataSource {
   @override
   Future<Response> request(

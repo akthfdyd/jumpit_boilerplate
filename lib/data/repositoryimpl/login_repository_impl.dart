@@ -6,6 +6,7 @@ import 'package:jumpit_boilerplate/data/model/response/login_post_vo.dart';
 import 'package:jumpit_boilerplate/domain/entity/login_entity.dart';
 import 'package:jumpit_boilerplate/domain/repository/login_repository.dart';
 
+/// {@category RepositoryImpl}
 class LoginRepositoryImpl implements LoginRepository {
   @override
   RemoteDataSource dataSource;

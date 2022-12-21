@@ -82,6 +82,7 @@ class _BottomTabViewState extends State<BottomTabView> {
             // section: home
             Expanded(
               child: InkWell(
+                  key: const Key('bottomTabHome'),
                   onTap: onClickHomeTab,
                   child: const Center(
                     child: Text("HOME"),
@@ -94,6 +95,7 @@ class _BottomTabViewState extends State<BottomTabView> {
             // section: my
             Expanded(
               child: InkWell(
+                key: const Key('bottomTabMy'),
                 onTap: onClickMyTab,
                 child: const Center(
                   child: Text("MY"),

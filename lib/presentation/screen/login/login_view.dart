@@ -68,6 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   void dispose() {
     Log.i("LoginScreen dispose");
+    loginViewModel.disposeAll();
     super.dispose();
   }
 
@@ -82,6 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             const SizedBox(height: 100),
             buildCommonTextField(
+              const Key("textFieldLoginID"),
               false,
               "ID",
               "ex) mad@formad.com",
@@ -89,6 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             const SizedBox(height: 30),
             buildCommonTextField(
+              const Key("textFieldLoginPW"),
               true,
               "Password",
               "at least 8 characters",
@@ -135,6 +138,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget buildSignInButton() {
     return InkWell(
+      key: const Key("buttonSignIn"),
       onTap: () {
         loginViewModel.signIn();
       },

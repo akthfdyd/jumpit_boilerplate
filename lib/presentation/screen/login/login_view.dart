@@ -11,7 +11,7 @@ import 'package:jumpit_boilerplate/util/dev_log.dart';
 import 'package:jumpit_boilerplate/util/screen_util.dart';
 
 /// {@category Screen}
-/// 로그인 화면 [_LoginScreenState]
+/// 로그인 화면 [LoginScreenState]
 /// - Project: http://www.groupware.com/projectnumber
 /// - Design: http://www.designaddress.com/projectnumber
 /// - Specification: http://www.specandwireframe.com/projectnumber
@@ -27,10 +27,10 @@ class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<LoginScreen> createState() => LoginScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class LoginScreenState extends State<LoginScreen> {
   // explain: View should be passive. ViewModel has business logic.
   var loginViewModel = it<LoginViewModel>();
 
@@ -128,8 +128,8 @@ class _LoginScreenState extends State<LoginScreen> {
       width: getScreenWidth(context),
       child: loginViewModel.pwText.ui(
         builder: (context, pw) => Text(
-          // passwordValidation(pw.hasData ? pw.data ?? "" : ""),
           passwordValidation("${loginViewModel.pwText.val}"),
+          key: const Key("textValidationPW"),
           style: const TextStyle(color: Color(0xffff5555)),
         ),
       ),

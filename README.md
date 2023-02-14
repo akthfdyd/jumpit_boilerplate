@@ -4,4 +4,4 @@
 
 https://medium.com/jumpit 의 Flutter 시리즈를 참고해 주세요.
 
-작성시 Flutter 버전 2.10.2
+Flutter 버전 2.10.2 -> 3.3.10

@@ -139,18 +139,18 @@ packages:
     dependency: transitive
     description:
       name: directed_graph
-      sha256: fcb45029b4a5089d383b79056b6716d6bf5af79b8e7dbac4b61d26af46410548
+      sha256: "82061c9ce3ac74d9c4c173fb03daac515d503a0f9f77c0010a872f8c344a4f03"
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.3"
+    version: "0.3.9"
   exception_templates:
     dependency: transitive
     description:
       name: exception_templates
-      sha256: "517f7c770da690073663f867ee2057ae2f4ffb28edae9da9faa624aa29ac76eb"
+      sha256: e9303fd16ecdb845a14b397cb93476f807dd2b4706f5ee44f708dbc95c256c33
       url: "https://pub.dev"
     source: hosted
-    version: "0.3.1"
+    version: "0.2.4"
   fake_async:
     dependency: transitive
     description:
@@ -232,6 +232,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
+  graphs:
+    dependency: transitive
+    description:
+      name: graphs
+      sha256: "741bbf84165310a68ff28fe9e727332eef1407342fca52759cb21ad8177bb8d0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.2"
   http:
     dependency: "direct main"
     description:
@@ -265,10 +273,10 @@ packages:
     dependency: transitive
     description:
       name: lazy_memo
-      sha256: dcb30b4184a6d767e1d779d74ce784d752d38313b8fb4bad6b659ae7af4bb34d
+      sha256: ca4be412d65726f79a30ba6e40b7056f1dbefbb35ec42913365b3f3e86d49279
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.3"
+    version: "0.1.9"
   leak_tracker:
     dependency: transitive
     description:

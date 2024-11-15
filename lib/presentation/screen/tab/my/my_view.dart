@@ -1,4 +1,6 @@
 import 'package:arc/arc.dart';
+import 'package:dart_eval/dart_eval_bridge.dart';
+import 'package:dart_eval/stdlib/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_eval/flutter_eval.dart';
 import 'package:flutter_eval/widgets.dart';
@@ -41,15 +43,15 @@ class _MyScreenState extends State<MyScreen> {
       id: '#my_view',
       args: [
         $BuildContext.wrap(context),
-        myViewModel.centerString,
-        () {
+        $String(myViewModel.centerString.val),
+        $Function((runtime, target, args) {
           myViewModel.centerString.val = 'new love';
           showDialog(
               context: Arc().currentContext,
               builder: (context) {
                 return Center(child: Text("${myViewModel.centerString.val}"));
               });
-        },
+        }),
       ],
       childBuilder: (context) {
         return Container(

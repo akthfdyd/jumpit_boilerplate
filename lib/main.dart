@@ -20,7 +20,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     MockDataStore(context);
     return HotSwapLoader(
-      uri: '',
+      uri:
+          'https://raw.githubusercontent.com/akthfdyd/jumpit_boilerplate/refs/heads/feature/1.0.2_hot_update/evc/v0.0.1.evc',
       strategy: HotSwapStrategy.immediate,
       child: MaterialApp(
         navigatorKey: Arc().navigatorKey,

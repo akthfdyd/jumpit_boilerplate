@@ -1,5 +1,6 @@
 import 'package:arc/arc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_eval/flutter_eval.dart';
 import 'package:jumpit_boilerplate/data/datasource/local/mock_data_store.dart';
 import 'package:jumpit_boilerplate/presentation/screen/bottom_tab_view.dart';
 import 'injection_container.dart' as ic;
@@ -18,9 +19,13 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     MockDataStore(context);
-    return MaterialApp(
-      navigatorKey: Arc().navigatorKey,
-      home: const BottomTabView(),
+    return HotSwapLoader(
+      uri: '',
+      strategy: HotSwapStrategy.immediate,
+      child: MaterialApp(
+        navigatorKey: Arc().navigatorKey,
+        home: const BottomTabView(),
+      ),
     );
   }
 }

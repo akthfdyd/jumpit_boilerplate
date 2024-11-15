@@ -17,4 +17,6 @@ class MyViewModel implements ViewModelInterface {
   disposeAll() {
     viewState.close();
   }
+
+  var centerString = ''.sbj;
 }

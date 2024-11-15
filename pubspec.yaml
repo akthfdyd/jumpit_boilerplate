@@ -3,7 +3,7 @@ description: jumpit app architecture
 
 publish_to: 'none'
 
-version: 1.0.1+3
+version: 1.0.2+4
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
@@ -19,9 +19,14 @@ dependencies:
   get_it: ^7.2.0
 
   # section: network
-  http: ^0.13.4
+  http: 1.2.2
 
+  # section: ui
   cupertino_icons: ^1.0.2
+
+  # section: flutter compiler
+  flutter_eval: ^0.7.6
+  dart_eval: ^0.7.9
 
 dev_dependencies:
   flutter_test:

@@ -1,4 +1,7 @@
+import 'package:arc/arc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_eval/flutter_eval.dart';
+import 'package:flutter_eval/widgets.dart';
 import 'package:jumpit_boilerplate/injection_container.dart';
 import 'package:jumpit_boilerplate/presentation/screen/tab/my/my_viewmodel.dart';
 
@@ -34,9 +37,26 @@ class _MyScreenState extends State<MyScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: const Color(0xffccaaaa),
-      child: const Center(child: Text("MY")),
+    return HotSwap(
+      id: '#my_view',
+      args: [
+        $BuildContext.wrap(context),
+        myViewModel.centerString,
+        () {
+          myViewModel.centerString.val = 'new love';
+          showDialog(
+              context: Arc().currentContext,
+              builder: (context) {
+                return Center(child: Text("${myViewModel.centerString.val}"));
+              });
+        },
+      ],
+      childBuilder: (context) {
+        return Container(
+          color: const Color(0xffccaaaa),
+          child: const Center(child: Text("MY")),
+        );
+      },
     );
   }
 }

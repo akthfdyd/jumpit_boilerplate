@@ -1,0 +1,23 @@
+name: hot_update
+description: hot update for jumpit_boilerplate
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  eval_annotation: ^0.7.1
+  flutter:
+    sdk: flutter
+#  arc:
+#    git: https://github.com/akthfdyd/arc.git
+#    path: ../../arc
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
